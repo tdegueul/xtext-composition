@@ -1,0 +1,7 @@
+entity Foo {
+	attr a : String
+}
+
+entity Bar {
+	attr b : int
+}

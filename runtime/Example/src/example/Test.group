@@ -1,0 +1,15 @@
+group G {
+	entity AA {
+		attr aa : int
+	}	
+}
+
+group H {
+	entity BB {
+		attr bb : String
+	}
+	
+	entity CC {
+		attr cc : java.util.List<double>
+	}
+}
