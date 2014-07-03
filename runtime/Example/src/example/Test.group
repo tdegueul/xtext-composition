@@ -10,6 +10,6 @@ group H {
 	}
 	
 	entity CC {
-		attr cc : java.util.List<double>
+		attr cc : java.util.List<String>
 	}
 }
