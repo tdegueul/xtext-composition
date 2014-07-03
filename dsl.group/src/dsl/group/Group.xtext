@@ -1,0 +1,13 @@
+grammar dsl.group.Group with dsl.entity.Entity
+
+generate group "http://www.group.dsl/Group"
+
+Root:
+	(groups += Group)*
+;
+
+Group:
+	'group' name = ID '{'
+		(entities += Entity)*
+	'}'
+;	

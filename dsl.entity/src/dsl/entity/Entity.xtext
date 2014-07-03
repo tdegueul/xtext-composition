@@ -1,0 +1,17 @@
+grammar dsl.entity.Entity with org.eclipse.xtext.xbase.Xbase
+
+generate entity "http://www.entity.dsl/Entity"
+
+Model:
+	(entity += Entity)*
+;
+
+Entity:
+	'entity' name = ID '{'
+		(attrs += Attribute)*
+	'}'
+;
+
+Attribute:
+	'attr' name = ID ':' type = JvmTypeReference
+;
